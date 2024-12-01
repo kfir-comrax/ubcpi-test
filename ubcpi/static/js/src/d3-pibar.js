@@ -14,10 +14,10 @@ d3.custom.barChart = function(scope, gettext) {
     // Private Variables
     var chartWidth  = 750;
     var chartHeight = 250;
-    var minTotalFrequency = 1;
+    var minTotalFrequency = 10;
     console.log('scope.rolescope.rolescope.rolescope.role:', scope.role)
     if(scope.role == 'instructor' || scope.role == 'staff' || scope.role == 'student'){ minTotalFrequency = 1}
-
+    console.log('minTotalFrequency:', minTotalFrequency)
     function chart(selection) {
         selection.each(function(data) {
             var totalFreq = d3.sum(data, function(d) { return d.frequency; });
@@ -168,10 +168,10 @@ d3.custom.perAnswerChart = function(scope, gettext, allAnswerCount) {
     var chartWidth  = 750;
     var chartHeight = 56;
     var labelWidth = 150;
-    var minTotalFrequency = 1;
+    var minTotalFrequency = 10;
     console.log('scope.rolescope.rolescope.role:', scope.role)
     if(scope.role == 'instructor' || scope.role == 'staff' || scope.role == 'student'){ minTotalFrequency = 1}
-
+    console.log('minTotalFrequency:', minTotalFrequency)
     function chart(selection) {
         selection.each(function(data) {
             var totalFreq = allAnswerCount;
