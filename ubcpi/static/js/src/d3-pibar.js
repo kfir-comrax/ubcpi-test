@@ -15,8 +15,7 @@ d3.custom.barChart = function(scope, gettext) {
     var chartWidth  = 750;
     var chartHeight = 250;
     var minTotalFrequency = 1;
-    console.log('scopeׂ:', scopeׂ)
-    console.log('gettext:', gettext)
+    console.log('scope.rolescope.rolescope.rolescope.role:', scope.role)
     if(scope.role == 'instructor' || scope.role == 'staff' || scope.role == 'student'){ minTotalFrequency = 1}
 
     function chart(selection) {
@@ -170,9 +169,7 @@ d3.custom.perAnswerChart = function(scope, gettext, allAnswerCount) {
     var chartHeight = 56;
     var labelWidth = 150;
     var minTotalFrequency = 1;
-    console.log('scopeׂ:', scopeׂ)
-    console.log('gettext:', gettext)
-    console.log('allAnswerCount:', allAnswerCount)
+    console.log('scope.rolescope.rolescope.role:', scope.role)
     if(scope.role == 'instructor' || scope.role == 'staff' || scope.role == 'student'){ minTotalFrequency = 1}
 
     function chart(selection) {
